@@ -11,7 +11,7 @@ public:
         }else{
             result=(temp-32)*5/9;
         }
-        // Round to 2 decimal places
+        //round to 2 decimal 
         return round(result*100)/100;
     }
 };
