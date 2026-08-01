@@ -6,7 +6,7 @@ public:
         while(numBottles>=numExchange){
             int newBottles= numBottles/numExchange;
             int remBottles = numBottles% numExchange;
-            ans=ans+newBottles;
+            ans=ans+newBottles;          //total number of bottle drink will keep increasing as we exchnge the bottles
             numBottles= newBottles + remBottles;
         }
         
