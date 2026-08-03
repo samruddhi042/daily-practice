@@ -11,12 +11,12 @@ public:
         int st=1;
         int tt=1;
 
-        for(int i=3;i<=n;i++){
+        for(int i=3;i<=n;i++){    // directly starting the loop with i=3 and not i=1 coz the value should be small so it can be stored in int'
             int frt= ft + st +tt;
-            ft=st;
+            ft=st;         //key cconcept here is the 'rolling window'
             st=tt;
             tt=frt;
         }
-        return tt;
+        return tt;  //ultimately returning tt' coz the final value(value after iteration) is going to ba storedd in tt'
     }
 };
