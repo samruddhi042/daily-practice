@@ -6,9 +6,9 @@ public:
         for(int i=0;i<nums.size();i++){
 
             for( int j=i+1; j<nums.size();j++){
-                if(nums[i]+nums[j]==target){
+                if(nums[i]+nums[j]==target){  //used 2 loops here, but to speedup the search use hashmap
                     ans[0]=i;
-                    ans[1]=j;
+                    ans[1 ]=j;
                     break; //break the loop when we found only valid answer
                 }
             }
