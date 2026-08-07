@@ -5,10 +5,10 @@ public:
         int end=numbers.size()-1;
         while (start<end){
 
-            int sum =numbers[start]+numbers[end];
+            int sum =numbers[start]+ numbers[end];
             //target found
             if(sum ==target){
-                return {start+1,end+1}; //return 1-based indices
+                return {start+1 ,end+1}; //return 1-based indices
             }else if(sum>target){
                 end--;
             }else{
